@@ -1,0 +1,336 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="fixed-top" id="header">
+        <h1>Survey Questions</h1>
+
+    </nav>
+
+    <hr>
+
+    <div class="container">
+
+        <h3><i class="fas fa-user"></i> About You...</h3>
+
+        <form>
+            <div class="form-group">
+                <label>Name (Required)</label>
+                <p><em>(I recommend using real name so that other people who matches you would know you)</em></p>
+                <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="form-group">
+                <label>Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="photoInput">
+            </div>
+
+            <hr>
+
+            <h3><i class="fas fa-question-circle"></i> To Help Me Understand More About You..</h3>
+            <div class="form-group">
+                <label><strong>Q1. </strong>You are a morning person. You love getting up early.</label>
+                <select class="form-control" class="dropdown" id="q1">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q2. </strong>You prefer coffee to tea.</label>
+                <select class="form-control" class="dropdown" id="q2">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q3. </strong>You cannot live without movies. </label>
+                <select class="form-control" class="dropdown" id="q3">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q4. </strong>You always prefer going out to staying in.</label>
+                <select class="form-control" class="dropdown" id="q4">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q5. </strong>An ideal weekend would have: Netflix, naps, and snacks. </label>
+                <select class="form-control" class="dropdown" id="q5">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q6. </strong>You love eating. You are always down for foods. </label>
+                <select class="form-control" class="dropdown" id="q6">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q7. </strong>You love all kinds of sports. You contantly work out.</label>
+                <select class="form-control" class="dropdown" id="q7">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q8. </strong>You always keep up on news and like discussing politics with people around
+                    you.</label>
+                <select class="form-control" class="dropdown" id="q8">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q9. </strong>You love travelling and try to explore the world whenever you can have a
+                    vacation.</label>
+                <select class="form-control" class="dropdown" id="q9">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Q10. </strong>You enjoy making your home tidy and clean. You cannot stand a messy
+                    living/working space.</label>
+                <select class="form-control" class="dropdown" id="q10">
+                    <option value="" selected disabled>(select from the list)</option>
+                    <option value=1>1 (Strongly Disagree)</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <p>Your perfect Match is... <span id="matchNameDiv"></span></p>
+                        <img id=matchPicDiv width="100px" width="100px"></img>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        <button type="button" class="btn btn-info" id="submitBtn"><i class="fas fa-check-circle"></i> Submit</button>
+
+        <hr>
+        <footer class="page-footer font-small blue">
+            <p><a href="/api/friends">API Friends List</a>
+                |
+                <a href="https://github.com/chengyisong">Github Repo</a>
+            </p>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+<style>
+    h1{
+        text-align: center;
+        
+    }
+
+    h3 {
+        font-style: italic;
+        background-color: #C7FDF0;
+        font-size: 23px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    #header{
+        background-color:#D5C7FD;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #matchNameDiv {
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+    }
+
+</style>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+    function clearForm() {
+        $("#nameInput").val("");
+        $("#photoInput").val("");
+        $("select").val("");
+    }
+
+    function formValidation() {
+
+        if ($("#nameInput").val().trim() == "" || $("#photoInput").val().trim() == "" || $("#q1").val() == null || $("#q2").val() == null || $("#q3").val() == null || $("#q4").val() == null || $("#q5").val() == null || $("#q6").val() == null || $("#q7").val() == null || $("#q8").val() == null || $("#q9").val() == null || $("#q10").val() == null) {
+            return false;
+        }
+
+        else {
+            return true;
+        }
+    }
+
+
+
+    $(document).on("click", "#submitBtn", function (event) {
+
+
+        if (formValidation()) {
+
+            event.preventDefault();
+
+            var newFriend = {
+                name: $("#nameInput").val().trim(),
+                photo: $("#photoInput").val().trim(),
+                answers: [
+                    parseInt($("#q1").val()),
+                    parseInt($("#q2").val()),
+                    parseInt($("#q3").val()),
+                    parseInt($("#q4").val()),
+                    parseInt($("#q5").val()),
+                    parseInt($("#q6").val()),
+                    parseInt($("#q7").val()),
+                    parseInt($("#q8").val()),
+                    parseInt($("#q9").val()),
+                    parseInt($("#q10").val()),
+                ]
+            }
+
+            console.log(newFriend);
+            console.log(JSON.stringify(newFriend));
+
+            $.ajax({
+                url: "/api/friends",
+                type: "POST",
+                contentType: "application/json",
+                dataType: "json",
+                data: JSON.stringify(newFriend)
+            });
+
+
+            $.ajax({
+                method: "GET",
+                url: "/api/friends"
+            }).then(function (data) {
+
+                var min = 100;
+                var matchName = "";
+                var matchPic = "";
+
+
+                for (var i = 0; i < data.length - 1; i++) {
+                    var sum = 0;
+
+                    for (var j = 0; j < 10; j++) {
+                        sum = sum + Math.abs(newFriend.answers[j] - data[i].answers[j])
+                    }
+                    if (sum < min) {
+                        min = sum;
+                        matchName = data[i].name;
+                        matchPic = data[i].photo;
+                    }
+                }
+
+                console.log("Matched person is..." + matchName);
+                console.log("Matched photo is..." + matchPic);
+
+                $("#matchNameDiv").text(matchName)
+                $("#matchPicDiv").attr("src", matchPic)
+                $(".modal").modal("toggle");
+            })
+
+            clearForm();
+
+        }
+
+        else {
+            alert("Please fill out all the fields!")
+        }
+
+    })
+
+</script>
